@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Study Hub - Sorteio de Serviços</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="confetti-container" id="confettiContainer" aria-hidden="true"></div>
+
+  <main class="container">
+    <section class="screen" id="screen1">
+      <header class="header">
+        <h1>AWS Study Hub</h1>
+        <p class="subtitle">Sorteie um serviço AWS e explique com as suas palavras.</p>
+      </header>
+
+      <div class="cert-buttons">
+        <button type="button" class="cert-btn" id="btnClf" data-cert="CLF-C02">
+          Cloud Practitioner (CLF-C02)
+        </button>
+        <button type="button" class="cert-btn" id="btnAif" data-cert="AIF-C01">
+          AI Practitioner (AIF-C01)
+        </button>
+      </div>
+    </section>
+
+    <section class="screen hidden" id="screen2">
+      <p class="cert-chosen" id="certChosen" aria-live="polite"></p>
+
+      <div class="roulette-box" id="rouletteBox">
+        <span class="roulette-text" id="rouletteText">?</span>
+      </div>
+
+      <button type="button" class="draw-btn" id="drawBtn">Sortear</button>
+
+      <button type="button" class="check-answer-btn hidden" id="checkAnswerBtn">Verificar resposta</button>
+
+      <p class="result-instruction" id="resultInstruction" aria-live="polite"></p>
+
+      <div class="answer-card hidden" id="answerCard" aria-live="polite">
+        <h2 class="answer-title" id="answerTitle"></h2>
+        <p class="answer-text" id="answerText"></p>
+      </div>
+
+      <button type="button" class="change-cert-btn" id="changeCertBtn">Trocar certificação</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
