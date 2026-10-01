@@ -1,5 +1,3 @@
-# aws-study-hub
-
 # AWS Study Hub, feito com o Kiro 🎰
 
 Projeto construído com o **Kiro** durante um workshop de imersão em AWS. É uma roleta que sorteia serviços AWS para quem estuda para as certificações fundamentais.
@@ -23,33 +21,18 @@ Estudar para certificação só lendo e decorando funciona pouco. Saber **explic
 
 Este repositório tem dois objetivos: ajudar quem estuda e **mostrar o que dá para construir com o Kiro**.
 
-## Como o Kiro foi usado neste projeto
+## Como usei o Kiro neste projeto
 
-1. **Spec:** comecei com o modo Spec. O Kiro gerou requisitos, design técnico e lista de tarefas, e executei as tarefas com o "Run all tasks". Foi ótimo para organizar, mas consumiu muitos créditos para um site simples.
-2. **Recomeço no Vibe:** com um escopo bem menor (uma roleta e duas telas), recriei o projeto no modo Vibe, mais rápido e mais barato.
-3. **Ajustes em pedidos pequenos:** layout em duas telas, cores da AWS, animação da roleta e o botão "Verificar resposta" foram feitos um pedido de cada vez no Vibe.
-4. **Prompt final:** consolidei tudo em um único prompt que recria o site inteiro: [`prompt-final.md`](prompt-final.md).
+| Etapa | Recurso do Kiro | O que fiz | Por quê |
+|---|---|---|---|
+| 1 | **Spec** | Descrevi a ideia e o Kiro gerou os requisitos, o design técnico e a lista de tarefas. | Queria planejar o projeto e guardar os documentos para mostrar o processo. |
+| 2 | **Spec** | Ajustei os requisitos e o design para rodar só no navegador, sem serviços AWS, sem Node e sem testes automatizados. | Queria um projeto simples, sem custo e sem instalar nada. |
+| 3 | **Spec** | Executei as tarefas com o "Run all tasks". | Para ver o Kiro implementar o plano inteiro. |
+| 4 | **Vibe** | Adicionei uma segunda certificação (AI Practitioner) com pedidos pequenos. | Era uma mudança pequena e bem definida. |
+| 5 | **Vibe** | Recomecei o projeto do zero, com um escopo bem menor: uma roleta e duas telas. | O primeiro projeto estava grande demais para o que eu queria, e o Spec consumiu muitos créditos. |
+| 6 | **Vibe** | Ajustei o layout, as cores da AWS, a animação da roleta e criei o botão "Verificar resposta", um pedido de cada vez. | Pedidos pequenos e específicos funcionam melhor e gastam menos créditos. |
 
-## Recursos do Kiro vistos no workshop
-
-| Recurso | O que faz | Usei neste projeto? |
-|---|---|---|
-| **Vibe Coding** | Implementação rápida de funcionalidades com auxílio de IA | Sim |
-| **Spec (Desenvolvimento Orientado a Especificações)** | Planeja e implementa funcionalidades complexas em vários arquivos | Sim |
-| **Steering** | Ensina ao Kiro os padrões e convenções do projeto | Não |
-| **Direção avançada** | Dá controle mais preciso do comportamento da IA | Não |
-| **Agent hooks** | Automatizam fluxos de trabalho repetitivos | Não |
-| **MCP (Model Context Protocol)** | Amplia as capacidades do Kiro | Não |
-| **Kiro Powers** | Integrações e ferramentas pré-construídas | Não |
-| **Kiro CLI** | Fluxos de trabalho na linha de comando | Não |
-| **Kiro Web** | Delegação de tarefas para desenvolvimento autônomo no navegador | Não |
-
-## O que aprendi
-
-- **Spec** é ótimo para projetos grandes e estruturados, mas custa mais créditos.
-- **Vibe** é melhor para o que é pequeno e direto.
-- Pedidos pequenos e específicos funcionam melhor do que um pedido enorme.
-- Vale testar no navegador entre um pedido e outro, para descobrir cedo o que não ficou como se queria.
+O prompt final, que recria o site inteiro, está em [`prompt-final.md`](prompt-final.md).
 
 ## Como funciona o site
 
@@ -70,22 +53,12 @@ Este repositório tem dois objetivos: ajudar quem estuda e **mostrar o que dá p
 |---|---|
 | ![Verificar resposta](docs/imagens/05-verificar-resposta.png) | ![Versão para celular](docs/imagens/06-celular.png) |
 
-## Como rodar localmente
-
-1. Baixe `index.html`, `style.css` e `script.js` na mesma pasta.
-2. Abra o `index.html` no Chrome ou no Edge (se necessário, arraste o arquivo para a janela do navegador).
-
-Não precisa instalar nada.
-
 ## Próximos passos
 
 - Colocar o site no ar com o GitHub Pages.
 - Adicionar mais serviços e certificações.
-- Experimentar outros recursos do Kiro, como Steering e Hooks.
+- Explorar outros recursos do Kiro vistos no workshop.
 - Permitir responder por voz.
 - Corrigir a resposta com IA (Amazon Bedrock).
 
-## Aviso
-
-- As explicações dos serviços foram **geradas por IA** e podem conter imprecisões. Confira na [documentação oficial da AWS](https://docs.aws.amazon.com/).
-- Este é um projeto de estudo e **não tem vínculo oficial com a AWS**.
+📝 Conceitos e aprendizados em: [`notas.md`](notas.md).
